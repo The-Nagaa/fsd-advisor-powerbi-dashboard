@@ -1,0 +1,554 @@
+{
+  "id": 1,
+  "resourcePackages": [],
+  "sections": [
+    {
+      "name": "Section_Overview",
+      "displayName": "Executive Overview",
+      "ordinal": 0,
+      "width": 1280,
+      "height": 720,
+      "visualContainers": [
+        {
+          "x": 20,
+          "y": 20,
+          "z": 1000,
+          "width": 140,
+          "height": 85,
+          "config": "{\"name\": \"8c260f3a-0cda-4df9-953c-26b2e4994b23\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 20, \"z\": 1000, \"width\": 140, \"height\": 85}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Filtered Advisor Count\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Filtered Advisor Count\"}, \"Name\": \"_Measures.Filtered Advisor Count\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Filtered Advisors'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Filtered Advisor Count\"}, \"Name\": \"_Measures.Filtered Advisor Count\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 170,
+          "y": 20,
+          "z": 1000,
+          "width": 140,
+          "height": 85,
+          "config": "{\"name\": \"dc384c80-7ad1-457a-b6a6-8d00d1a9a6e4\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 170, \"y\": 20, \"z\": 1000, \"width\": 140, \"height\": 85}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Total Advisor Firms\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Total Advisor Firms\"}, \"Name\": \"_Measures.Total Advisor Firms\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Total Unique Firms'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Total Advisor Firms\"}, \"Name\": \"_Measures.Total Advisor Firms\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 320,
+          "y": 20,
+          "z": 1000,
+          "width": 130,
+          "height": 85,
+          "config": "{\"name\": \"ee9b881e-6da7-4b8a-b7df-4bc0d0c546ca\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 320, \"y\": 20, \"z\": 1000, \"width\": 130, \"height\": 85}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Unique States\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Unique States\"}, \"Name\": \"_Measures.Unique States\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Unique States'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Unique States\"}, \"Name\": \"_Measures.Unique States\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 460,
+          "y": 20,
+          "z": 1000,
+          "width": 130,
+          "height": 85,
+          "config": "{\"name\": \"68dea1fa-e17a-443d-8e08-66503492e599\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 460, \"y\": 20, \"z\": 1000, \"width\": 130, \"height\": 85}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Unique Cities\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Unique Cities\"}, \"Name\": \"_Measures.Unique Cities\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Unique Cities'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Unique Cities\"}, \"Name\": \"_Measures.Unique Cities\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 600,
+          "y": 20,
+          "z": 1000,
+          "width": 130,
+          "height": 85,
+          "config": "{\"name\": \"4ff41b38-e2a6-491c-aa2b-f32d8feb99b3\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 600, \"y\": 20, \"z\": 1000, \"width\": 130, \"height\": 85}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Unique ZIP Codes\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Unique ZIP Codes\"}, \"Name\": \"_Measures.Unique ZIP Codes\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Unique ZIPs'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Unique ZIP Codes\"}, \"Name\": \"_Measures.Unique ZIP Codes\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 740,
+          "y": 20,
+          "z": 1000,
+          "width": 160,
+          "height": 85,
+          "config": "{\"name\": \"5a94d2f3-fecb-46ce-8f5c-d3a5149752aa\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 740, \"y\": 20, \"z\": 1000, \"width\": 160, \"height\": 85}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Firms with Website\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Firms with Website\"}, \"Name\": \"_Measures.Firms with Website\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Firms w/ Website'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Firms with Website\"}, \"Name\": \"_Measures.Firms with Website\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 910,
+          "y": 20,
+          "z": 1000,
+          "width": 160,
+          "height": 85,
+          "config": "{\"name\": \"6133b701-ff2a-4e1b-b75f-c6f481fae408\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 910, \"y\": 20, \"z\": 1000, \"width\": 160, \"height\": 85}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Firms with LinkedIn\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Firms with LinkedIn\"}, \"Name\": \"_Measures.Firms with LinkedIn\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Firms w/ LinkedIn'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Firms with LinkedIn\"}, \"Name\": \"_Measures.Firms with LinkedIn\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 1080,
+          "y": 20,
+          "z": 1000,
+          "width": 170,
+          "height": 85,
+          "config": "{\"name\": \"63bfa663-3888-46aa-af30-22bb26e860cc\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1080, \"y\": 20, \"z\": 1000, \"width\": 170, \"height\": 85}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Firms with Facebook\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Firms with Facebook\"}, \"Name\": \"_Measures.Firms with Facebook\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Firms w/ Facebook'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Firms with Facebook\"}, \"Name\": \"_Measures.Firms with Facebook\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 20,
+          "y": 115,
+          "z": 1000,
+          "width": 180,
+          "height": 75,
+          "config": "{\"name\": \"c6f36829-3ec1-4a7f-ba2d-3fa0a52e154a\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 115, \"z\": 1000, \"width\": 180, \"height\": 75}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"FSD Directory.country\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"country\"}, \"Name\": \"FSD Directory.country\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'1. Country'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"country\"}, \"Name\": \"FSD Directory.country\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 20,
+          "y": 195,
+          "z": 1000,
+          "width": 180,
+          "height": 80,
+          "config": "{\"name\": \"7ec299d7-5d04-4744-a877-6c9a81e9d98b\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 195, \"z\": 1000, \"width\": 180, \"height\": 80}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"FSD Directory.state\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"state\"}, \"Name\": \"FSD Directory.state\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'2. State'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"state\"}, \"Name\": \"FSD Directory.state\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 20,
+          "y": 280,
+          "z": 1000,
+          "width": 180,
+          "height": 80,
+          "config": "{\"name\": \"23784e46-443c-478c-8399-116b65d9a73b\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 280, \"z\": 1000, \"width\": 180, \"height\": 80}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"FSD Directory.city\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"city\"}, \"Name\": \"FSD Directory.city\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'3. City'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"city\"}, \"Name\": \"FSD Directory.city\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 20,
+          "y": 365,
+          "z": 1000,
+          "width": 180,
+          "height": 75,
+          "config": "{\"name\": \"d9c37239-7f72-438b-8e49-31c6044eda7d\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 365, \"z\": 1000, \"width\": 180, \"height\": 75}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"FSD Directory.zip\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"zip\"}, \"Name\": \"FSD Directory.zip\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'4. ZIP Code'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"zip\"}, \"Name\": \"FSD Directory.zip\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 20,
+          "y": 445,
+          "z": 1000,
+          "width": 180,
+          "height": 80,
+          "config": "{\"name\": \"353fc285-1279-4dd9-8a9b-ca476087e438\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 445, \"z\": 1000, \"width\": 180, \"height\": 80}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"FSD Directory.Website Available\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"Website Available\"}, \"Name\": \"FSD Directory.Website Available\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'5. Website Available'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"Website Available\"}, \"Name\": \"FSD Directory.Website Available\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 20,
+          "y": 530,
+          "z": 1000,
+          "width": 180,
+          "height": 80,
+          "config": "{\"name\": \"efb5628a-a24c-40a4-9edd-3b82a1f07ed7\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 530, \"z\": 1000, \"width\": 180, \"height\": 80}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"FSD Directory.LinkedIn Available\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"LinkedIn Available\"}, \"Name\": \"FSD Directory.LinkedIn Available\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'6. LinkedIn Available'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"LinkedIn Available\"}, \"Name\": \"FSD Directory.LinkedIn Available\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 20,
+          "y": 615,
+          "z": 1000,
+          "width": 180,
+          "height": 85,
+          "config": "{\"name\": \"605be656-7c9e-4f96-a799-ff891c3ab3af\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 615, \"z\": 1000, \"width\": 180, \"height\": 85}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"FSD Directory.Facebook Available\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"Facebook Available\"}, \"Name\": \"FSD Directory.Facebook Available\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'7. Facebook Available'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"Facebook Available\"}, \"Name\": \"FSD Directory.Facebook Available\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 220,
+          "y": 115,
+          "z": 1000,
+          "width": 520,
+          "height": 290,
+          "config": "{\"name\": \"3288bbe2-9d3f-46b4-89a4-d039c6ab7df4\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 220, \"y\": 115, \"z\": 1000, \"width\": 520, \"height\": 290}}], \"singleVisual\": {\"visualType\": \"clusteredBarChart\", \"projections\": {\"Category\": [{\"queryRef\": \"FSD Directory.state\"}], \"Y\": [{\"queryRef\": \"_Measures.Filtered Advisor Count\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"f\", \"Entity\": \"FSD Directory\", \"Type\": 0}, {\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"state\"}, \"Name\": \"FSD Directory.state\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Filtered Advisor Count\"}, \"Name\": \"_Measures.Filtered Advisor Count\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Filtered Advisor Count\"}}}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Top States by Advisor Count'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"f\", \"Entity\": \"FSD Directory\", \"Type\": 0}, {\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"state\"}, \"Name\": \"FSD Directory.state\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Filtered Advisor Count\"}, \"Name\": \"_Measures.Filtered Advisor Count\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Filtered Advisor Count\"}}}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0, 1]}]}}}}]}"
+        },
+        {
+          "x": 760,
+          "y": 115,
+          "z": 1000,
+          "width": 490,
+          "height": 290,
+          "config": "{\"name\": \"27211528-5103-46a0-b3ab-dd8a68a272e6\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 760, \"y\": 115, \"z\": 1000, \"width\": 490, \"height\": 290}}], \"singleVisual\": {\"visualType\": \"clusteredBarChart\", \"projections\": {\"Category\": [{\"queryRef\": \"FSD Directory.city\"}], \"Y\": [{\"queryRef\": \"_Measures.Filtered Advisor Count\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"f\", \"Entity\": \"FSD Directory\", \"Type\": 0}, {\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"city\"}, \"Name\": \"FSD Directory.city\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Filtered Advisor Count\"}, \"Name\": \"_Measures.Filtered Advisor Count\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Filtered Advisor Count\"}}}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Top Cities by Advisor Volume'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"f\", \"Entity\": \"FSD Directory\", \"Type\": 0}, {\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"city\"}, \"Name\": \"FSD Directory.city\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Filtered Advisor Count\"}, \"Name\": \"_Measures.Filtered Advisor Count\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Filtered Advisor Count\"}}}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0, 1]}]}}}}]}"
+        },
+        {
+          "x": 220,
+          "y": 420,
+          "z": 1000,
+          "width": 1030,
+          "height": 280,
+          "config": "{\"name\": \"ffc84862-5353-4a37-8aaa-277e1b706c58\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 220, \"y\": 420, \"z\": 1000, \"width\": 1030, \"height\": 280}}], \"singleVisual\": {\"visualType\": \"tableEx\", \"projections\": {\"Values\": [{\"queryRef\": \"FSD Directory.firm\"}, {\"queryRef\": \"FSD Directory.city\"}, {\"queryRef\": \"FSD Directory.state\"}, {\"queryRef\": \"FSD Directory.zip\"}, {\"queryRef\": \"FSD Directory.Website Available\"}, {\"queryRef\": \"FSD Directory.LinkedIn Available\"}, {\"queryRef\": \"FSD Directory.Facebook Available\"}, {\"queryRef\": \"FSD Directory.phone\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"f\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"firm\"}, \"Name\": \"FSD Directory.firm\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"city\"}, \"Name\": \"FSD Directory.city\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"state\"}, \"Name\": \"FSD Directory.state\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"zip\"}, \"Name\": \"FSD Directory.zip\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"Website Available\"}, \"Name\": \"FSD Directory.Website Available\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"LinkedIn Available\"}, \"Name\": \"FSD Directory.LinkedIn Available\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"Facebook Available\"}, \"Name\": \"FSD Directory.Facebook Available\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"phone\"}, \"Name\": \"FSD Directory.phone\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Executive Directory Preview'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"f\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"firm\"}, \"Name\": \"FSD Directory.firm\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"city\"}, \"Name\": \"FSD Directory.city\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"state\"}, \"Name\": \"FSD Directory.state\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"zip\"}, \"Name\": \"FSD Directory.zip\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"Website Available\"}, \"Name\": \"FSD Directory.Website Available\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"LinkedIn Available\"}, \"Name\": \"FSD Directory.LinkedIn Available\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"Facebook Available\"}, \"Name\": \"FSD Directory.Facebook Available\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"phone\"}, \"Name\": \"FSD Directory.phone\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0, 1, 2, 3, 4, 5, 6, 7]}]}}}}]}"
+        }
+      ]
+    },
+    {
+      "name": "Section_Geographic",
+      "displayName": "Geographic Analysis",
+      "ordinal": 1,
+      "width": 1280,
+      "height": 720,
+      "visualContainers": [
+        {
+          "x": 20,
+          "y": 20,
+          "z": 1000,
+          "width": 180,
+          "height": 160,
+          "config": "{\"name\": \"6d3b7d5c-0d8d-489c-96d9-77304c3a6fa1\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 20, \"z\": 1000, \"width\": 180, \"height\": 160}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"FSD Directory.state\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"state\"}, \"Name\": \"FSD Directory.state\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'State'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"state\"}, \"Name\": \"FSD Directory.state\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 20,
+          "y": 190,
+          "z": 1000,
+          "width": 180,
+          "height": 160,
+          "config": "{\"name\": \"0647043f-4efd-4138-a344-697a84059c74\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 190, \"z\": 1000, \"width\": 180, \"height\": 160}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"FSD Directory.city\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"city\"}, \"Name\": \"FSD Directory.city\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'City'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"city\"}, \"Name\": \"FSD Directory.city\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 20,
+          "y": 360,
+          "z": 1000,
+          "width": 180,
+          "height": 160,
+          "config": "{\"name\": \"17ffedde-8fef-4438-8b88-4848272208cb\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 360, \"z\": 1000, \"width\": 180, \"height\": 160}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"FSD Directory.zip\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"zip\"}, \"Name\": \"FSD Directory.zip\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'ZIP Code'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"zip\"}, \"Name\": \"FSD Directory.zip\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 20,
+          "y": 530,
+          "z": 1000,
+          "width": 180,
+          "height": 150,
+          "config": "{\"name\": \"babfee2d-3ce1-4643-9e20-f80fd9a8b841\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 530, \"z\": 1000, \"width\": 180, \"height\": 150}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"FSD Directory.country\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"country\"}, \"Name\": \"FSD Directory.country\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Country'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"country\"}, \"Name\": \"FSD Directory.country\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 220,
+          "y": 20,
+          "z": 1000,
+          "width": 240,
+          "height": 80,
+          "config": "{\"name\": \"8769f97b-b546-4104-a556-f9f6df00f58d\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 220, \"y\": 20, \"z\": 1000, \"width\": 240, \"height\": 80}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Filtered Advisor Count\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Filtered Advisor Count\"}, \"Name\": \"_Measures.Filtered Advisor Count\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Advisors in Selected Area'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Filtered Advisor Count\"}, \"Name\": \"_Measures.Filtered Advisor Count\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 480,
+          "y": 20,
+          "z": 1000,
+          "width": 240,
+          "height": 80,
+          "config": "{\"name\": \"1db090af-92ad-48f8-ac4d-11f44a1db064\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 480, \"y\": 20, \"z\": 1000, \"width\": 240, \"height\": 80}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Unique States\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Unique States\"}, \"Name\": \"_Measures.Unique States\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Covered States'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Unique States\"}, \"Name\": \"_Measures.Unique States\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 740,
+          "y": 20,
+          "z": 1000,
+          "width": 240,
+          "height": 80,
+          "config": "{\"name\": \"d9bd258d-e96f-4e7c-aa8c-a5a302360e6b\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 740, \"y\": 20, \"z\": 1000, \"width\": 240, \"height\": 80}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Unique Cities\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Unique Cities\"}, \"Name\": \"_Measures.Unique Cities\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Covered Cities'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Unique Cities\"}, \"Name\": \"_Measures.Unique Cities\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 1000,
+          "y": 20,
+          "z": 1000,
+          "width": 250,
+          "height": 80,
+          "config": "{\"name\": \"28618f7d-c40d-4707-a125-6e550220e4d7\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1000, \"y\": 20, \"z\": 1000, \"width\": 250, \"height\": 80}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Unique ZIP Codes\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Unique ZIP Codes\"}, \"Name\": \"_Measures.Unique ZIP Codes\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Covered ZIPs'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Unique ZIP Codes\"}, \"Name\": \"_Measures.Unique ZIP Codes\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 220,
+          "y": 120,
+          "z": 1000,
+          "width": 510,
+          "height": 570,
+          "config": "{\"name\": \"2cbd9834-a2b4-408e-902b-79195ee185a7\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 220, \"y\": 120, \"z\": 1000, \"width\": 510, \"height\": 570}}], \"singleVisual\": {\"visualType\": \"clusteredBarChart\", \"projections\": {\"Category\": [{\"queryRef\": \"FSD Directory.state\"}], \"Y\": [{\"queryRef\": \"_Measures.Filtered Advisor Count\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"f\", \"Entity\": \"FSD Directory\", \"Type\": 0}, {\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"state\"}, \"Name\": \"FSD Directory.state\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Filtered Advisor Count\"}, \"Name\": \"_Measures.Filtered Advisor Count\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Filtered Advisor Count\"}}}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Advisors by State (Density Breakdown)'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"f\", \"Entity\": \"FSD Directory\", \"Type\": 0}, {\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"state\"}, \"Name\": \"FSD Directory.state\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Filtered Advisor Count\"}, \"Name\": \"_Measures.Filtered Advisor Count\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Filtered Advisor Count\"}}}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0, 1]}]}}}}]}"
+        },
+        {
+          "x": 750,
+          "y": 120,
+          "z": 1000,
+          "width": 500,
+          "height": 270,
+          "config": "{\"name\": \"cf213f67-039a-45ed-91e3-d68e6c3dd472\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 750, \"y\": 120, \"z\": 1000, \"width\": 500, \"height\": 270}}], \"singleVisual\": {\"visualType\": \"clusteredBarChart\", \"projections\": {\"Category\": [{\"queryRef\": \"FSD Directory.city\"}], \"Y\": [{\"queryRef\": \"_Measures.Filtered Advisor Count\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"f\", \"Entity\": \"FSD Directory\", \"Type\": 0}, {\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"city\"}, \"Name\": \"FSD Directory.city\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Filtered Advisor Count\"}, \"Name\": \"_Measures.Filtered Advisor Count\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Filtered Advisor Count\"}}}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Top Metro Areas'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"f\", \"Entity\": \"FSD Directory\", \"Type\": 0}, {\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"city\"}, \"Name\": \"FSD Directory.city\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Filtered Advisor Count\"}, \"Name\": \"_Measures.Filtered Advisor Count\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Filtered Advisor Count\"}}}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0, 1]}]}}}}]}"
+        },
+        {
+          "x": 750,
+          "y": 410,
+          "z": 1000,
+          "width": 500,
+          "height": 280,
+          "config": "{\"name\": \"0dadafbd-74b4-4ed3-aaa0-2e09a73f47a7\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 750, \"y\": 410, \"z\": 1000, \"width\": 500, \"height\": 280}}], \"singleVisual\": {\"visualType\": \"tableEx\", \"projections\": {\"Values\": [{\"queryRef\": \"FSD Directory.state\"}, {\"queryRef\": \"FSD Directory.city\"}, {\"queryRef\": \"FSD Directory.zip\"}, {\"queryRef\": \"FSD Directory.firm\"}, {\"queryRef\": \"FSD Directory.phone\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"f\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"state\"}, \"Name\": \"FSD Directory.state\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"city\"}, \"Name\": \"FSD Directory.city\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"zip\"}, \"Name\": \"FSD Directory.zip\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"firm\"}, \"Name\": \"FSD Directory.firm\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"phone\"}, \"Name\": \"FSD Directory.phone\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Geographic Territory Drilldown'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"f\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"state\"}, \"Name\": \"FSD Directory.state\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"city\"}, \"Name\": \"FSD Directory.city\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"zip\"}, \"Name\": \"FSD Directory.zip\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"firm\"}, \"Name\": \"FSD Directory.firm\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"phone\"}, \"Name\": \"FSD Directory.phone\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0, 1, 2, 3, 4]}]}}}}]}"
+        }
+      ]
+    },
+    {
+      "name": "Section_Digital",
+      "displayName": "Digital Presence",
+      "ordinal": 2,
+      "width": 1280,
+      "height": 720,
+      "visualContainers": [
+        {
+          "x": 20,
+          "y": 20,
+          "z": 1000,
+          "width": 180,
+          "height": 150,
+          "config": "{\"name\": \"0005fd4b-b293-4b61-a1fd-b243f8825119\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 20, \"z\": 1000, \"width\": 180, \"height\": 150}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"FSD Directory.Website Available\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"Website Available\"}, \"Name\": \"FSD Directory.Website Available\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Website Available'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"Website Available\"}, \"Name\": \"FSD Directory.Website Available\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 20,
+          "y": 180,
+          "z": 1000,
+          "width": 180,
+          "height": 150,
+          "config": "{\"name\": \"d39722eb-32ab-4c52-9d82-d1ae2bbba429\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 180, \"z\": 1000, \"width\": 180, \"height\": 150}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"FSD Directory.LinkedIn Available\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"LinkedIn Available\"}, \"Name\": \"FSD Directory.LinkedIn Available\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'LinkedIn Available'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"LinkedIn Available\"}, \"Name\": \"FSD Directory.LinkedIn Available\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 20,
+          "y": 340,
+          "z": 1000,
+          "width": 180,
+          "height": 150,
+          "config": "{\"name\": \"ebf6f181-1720-4d29-8172-69f7577bca3d\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 340, \"z\": 1000, \"width\": 180, \"height\": 150}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"FSD Directory.Facebook Available\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"Facebook Available\"}, \"Name\": \"FSD Directory.Facebook Available\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Facebook Available'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"Facebook Available\"}, \"Name\": \"FSD Directory.Facebook Available\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 20,
+          "y": 500,
+          "z": 1000,
+          "width": 180,
+          "height": 190,
+          "config": "{\"name\": \"ee72f784-1473-4fec-b070-172924a9676f\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 500, \"z\": 1000, \"width\": 180, \"height\": 190}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"FSD Directory.state\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"state\"}, \"Name\": \"FSD Directory.state\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'State'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"state\"}, \"Name\": \"FSD Directory.state\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 220,
+          "y": 20,
+          "z": 1000,
+          "width": 240,
+          "height": 90,
+          "config": "{\"name\": \"5579d61f-0bce-4c2e-ac7e-1471e1de1025\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 220, \"y\": 20, \"z\": 1000, \"width\": 240, \"height\": 90}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Firms with Website\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Firms with Website\"}, \"Name\": \"_Measures.Firms with Website\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Firms w/ Website'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Firms with Website\"}, \"Name\": \"_Measures.Firms with Website\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 480,
+          "y": 20,
+          "z": 1000,
+          "width": 240,
+          "height": 90,
+          "config": "{\"name\": \"e6ad4883-2714-414e-87b1-2067238a37e8\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 480, \"y\": 20, \"z\": 1000, \"width\": 240, \"height\": 90}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Firms with LinkedIn\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Firms with LinkedIn\"}, \"Name\": \"_Measures.Firms with LinkedIn\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Firms w/ LinkedIn'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Firms with LinkedIn\"}, \"Name\": \"_Measures.Firms with LinkedIn\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 740,
+          "y": 20,
+          "z": 1000,
+          "width": 240,
+          "height": 90,
+          "config": "{\"name\": \"6684acf4-15dd-4646-9905-bd712686a108\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 740, \"y\": 20, \"z\": 1000, \"width\": 240, \"height\": 90}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Firms with Facebook\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Firms with Facebook\"}, \"Name\": \"_Measures.Firms with Facebook\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Firms w/ Facebook'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Firms with Facebook\"}, \"Name\": \"_Measures.Firms with Facebook\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 1000,
+          "y": 20,
+          "z": 1000,
+          "width": 250,
+          "height": 90,
+          "config": "{\"name\": \"e811dd0d-81f2-4973-881e-73060fd1f0a6\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1000, \"y\": 20, \"z\": 1000, \"width\": 250, \"height\": 90}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Firms with All Channels\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Firms with All Channels\"}, \"Name\": \"_Measures.Firms with All Channels\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Firms w/ All 3 Channels'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Firms with All Channels\"}, \"Name\": \"_Measures.Firms with All Channels\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 220,
+          "y": 120,
+          "z": 1000,
+          "width": 240,
+          "height": 80,
+          "config": "{\"name\": \"17979316-41c5-4739-aac3-1805f84b1284\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 220, \"y\": 120, \"z\": 1000, \"width\": 240, \"height\": 80}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Website Coverage %\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Website Coverage %\"}, \"Name\": \"_Measures.Website Coverage %\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Website Coverage'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Website Coverage %\"}, \"Name\": \"_Measures.Website Coverage %\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 480,
+          "y": 120,
+          "z": 1000,
+          "width": 240,
+          "height": 80,
+          "config": "{\"name\": \"3c1da442-9318-4574-b32e-76f65ca8a074\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 480, \"y\": 120, \"z\": 1000, \"width\": 240, \"height\": 80}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.LinkedIn Coverage %\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"LinkedIn Coverage %\"}, \"Name\": \"_Measures.LinkedIn Coverage %\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'LinkedIn Coverage'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"LinkedIn Coverage %\"}, \"Name\": \"_Measures.LinkedIn Coverage %\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 740,
+          "y": 120,
+          "z": 1000,
+          "width": 240,
+          "height": 80,
+          "config": "{\"name\": \"72badb69-3996-428f-b439-16930d8963dc\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 740, \"y\": 120, \"z\": 1000, \"width\": 240, \"height\": 80}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Facebook Coverage %\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Facebook Coverage %\"}, \"Name\": \"_Measures.Facebook Coverage %\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Facebook Coverage'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Facebook Coverage %\"}, \"Name\": \"_Measures.Facebook Coverage %\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 1000,
+          "y": 120,
+          "z": 1000,
+          "width": 250,
+          "height": 80,
+          "config": "{\"name\": \"c7b272a7-ab82-487c-af0c-cb0631d72fad\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1000, \"y\": 120, \"z\": 1000, \"width\": 250, \"height\": 80}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Phone Coverage %\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Phone Coverage %\"}, \"Name\": \"_Measures.Phone Coverage %\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Phone Coverage'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Phone Coverage %\"}, \"Name\": \"_Measures.Phone Coverage %\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 220,
+          "y": 220,
+          "z": 1000,
+          "width": 510,
+          "height": 470,
+          "config": "{\"name\": \"c71451eb-653f-40f5-85a4-898345cc0ff2\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 220, \"y\": 220, \"z\": 1000, \"width\": 510, \"height\": 470}}], \"singleVisual\": {\"visualType\": \"clusteredBarChart\", \"projections\": {\"Category\": [{\"queryRef\": \"FSD Directory.state\"}], \"Y\": [{\"queryRef\": \"_Measures.Firms with Website\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"f\", \"Entity\": \"FSD Directory\", \"Type\": 0}, {\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"state\"}, \"Name\": \"FSD Directory.state\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Firms with Website\"}, \"Name\": \"_Measures.Firms with Website\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Firms with Website\"}}}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Website Adoption by State'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"f\", \"Entity\": \"FSD Directory\", \"Type\": 0}, {\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"state\"}, \"Name\": \"FSD Directory.state\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Firms with Website\"}, \"Name\": \"_Measures.Firms with Website\"}], \"OrderBy\": [{\"Direction\": 2, \"Expression\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Firms with Website\"}}}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0, 1]}]}}}}]}"
+        },
+        {
+          "x": 750,
+          "y": 220,
+          "z": 1000,
+          "width": 500,
+          "height": 470,
+          "config": "{\"name\": \"7f0464bc-68fc-401c-9c3b-af72a67250e2\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 750, \"y\": 220, \"z\": 1000, \"width\": 500, \"height\": 470}}], \"singleVisual\": {\"visualType\": \"tableEx\", \"projections\": {\"Values\": [{\"queryRef\": \"FSD Directory.firm\"}, {\"queryRef\": \"FSD Directory.website\"}, {\"queryRef\": \"FSD Directory.linkedin\"}, {\"queryRef\": \"FSD Directory.facebook\"}, {\"queryRef\": \"FSD Directory.city\"}, {\"queryRef\": \"FSD Directory.state\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"f\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"firm\"}, \"Name\": \"FSD Directory.firm\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"website\"}, \"Name\": \"FSD Directory.website\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"linkedin\"}, \"Name\": \"FSD Directory.linkedin\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"facebook\"}, \"Name\": \"FSD Directory.facebook\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"city\"}, \"Name\": \"FSD Directory.city\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"state\"}, \"Name\": \"FSD Directory.state\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Multi-Channel Ready Outreach List'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"f\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"firm\"}, \"Name\": \"FSD Directory.firm\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"website\"}, \"Name\": \"FSD Directory.website\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"linkedin\"}, \"Name\": \"FSD Directory.linkedin\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"facebook\"}, \"Name\": \"FSD Directory.facebook\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"city\"}, \"Name\": \"FSD Directory.city\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"state\"}, \"Name\": \"FSD Directory.state\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0, 1, 2, 3, 4, 5]}]}}}}]}"
+        }
+      ]
+    },
+    {
+      "name": "Section_Directory",
+      "displayName": "Advisor Directory",
+      "ordinal": 3,
+      "width": 1280,
+      "height": 720,
+      "visualContainers": [
+        {
+          "x": 20,
+          "y": 20,
+          "z": 1000,
+          "width": 180,
+          "height": 110,
+          "config": "{\"name\": \"a667a09c-a009-468a-9237-ddf655acf6d8\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 20, \"z\": 1000, \"width\": 180, \"height\": 110}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"FSD Directory.state\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"state\"}, \"Name\": \"FSD Directory.state\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Filter State'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"state\"}, \"Name\": \"FSD Directory.state\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 20,
+          "y": 140,
+          "z": 1000,
+          "width": 180,
+          "height": 110,
+          "config": "{\"name\": \"a1ba4140-5754-4627-b2f9-ecb08423c000\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 140, \"z\": 1000, \"width\": 180, \"height\": 110}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"FSD Directory.city\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"city\"}, \"Name\": \"FSD Directory.city\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Filter City'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"city\"}, \"Name\": \"FSD Directory.city\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 20,
+          "y": 260,
+          "z": 1000,
+          "width": 180,
+          "height": 100,
+          "config": "{\"name\": \"69744617-7397-4f84-b808-a8696862a45c\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 260, \"z\": 1000, \"width\": 180, \"height\": 100}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"FSD Directory.zip\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"zip\"}, \"Name\": \"FSD Directory.zip\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Filter ZIP'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"zip\"}, \"Name\": \"FSD Directory.zip\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 20,
+          "y": 370,
+          "z": 1000,
+          "width": 180,
+          "height": 80,
+          "config": "{\"name\": \"952a1811-5f17-4284-8152-adc496de12c4\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 370, \"z\": 1000, \"width\": 180, \"height\": 80}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"FSD Directory.Website Available\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"Website Available\"}, \"Name\": \"FSD Directory.Website Available\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Website?'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"Website Available\"}, \"Name\": \"FSD Directory.Website Available\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 20,
+          "y": 460,
+          "z": 1000,
+          "width": 180,
+          "height": 80,
+          "config": "{\"name\": \"3e73ebb8-4946-446c-9a9b-aab3bf08281b\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 460, \"z\": 1000, \"width\": 180, \"height\": 80}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"FSD Directory.LinkedIn Available\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"LinkedIn Available\"}, \"Name\": \"FSD Directory.LinkedIn Available\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'LinkedIn?'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"LinkedIn Available\"}, \"Name\": \"FSD Directory.LinkedIn Available\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 20,
+          "y": 550,
+          "z": 1000,
+          "width": 180,
+          "height": 80,
+          "config": "{\"name\": \"b98b3a8d-bc83-4575-98f6-3406ffe79723\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 550, \"z\": 1000, \"width\": 180, \"height\": 80}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"FSD Directory.Facebook Available\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"Facebook Available\"}, \"Name\": \"FSD Directory.Facebook Available\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Facebook?'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"t\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t\"}}, \"Property\": \"Facebook Available\"}, \"Name\": \"FSD Directory.Facebook Available\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 20,
+          "y": 640,
+          "z": 1000,
+          "width": 180,
+          "height": 65,
+          "config": "{\"name\": \"81a7a954-ee6e-418a-ab77-d7ca888151b2\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 640, \"z\": 1000, \"width\": 180, \"height\": 65}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Filtered Advisor Count\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Filtered Advisor Count\"}, \"Name\": \"_Measures.Filtered Advisor Count\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Matching Advisors'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"m\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"m\"}}, \"Property\": \"Filtered Advisor Count\"}, \"Name\": \"_Measures.Filtered Advisor Count\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0]}]}}}}]}"
+        },
+        {
+          "x": 220,
+          "y": 20,
+          "z": 1000,
+          "width": 1030,
+          "height": 680,
+          "config": "{\"name\": \"83ee936d-d533-48a8-9090-e5cb9d39ce72\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 220, \"y\": 20, \"z\": 1000, \"width\": 1030, \"height\": 680}}], \"singleVisual\": {\"visualType\": \"tableEx\", \"projections\": {\"Values\": [{\"queryRef\": \"FSD Directory.firm\"}, {\"queryRef\": \"FSD Directory.position\"}, {\"queryRef\": \"FSD Directory.CRD Number\"}, {\"queryRef\": \"FSD Directory.street_address\"}, {\"queryRef\": \"FSD Directory.city\"}, {\"queryRef\": \"FSD Directory.state\"}, {\"queryRef\": \"FSD Directory.zip\"}, {\"queryRef\": \"FSD Directory.phone\"}, {\"queryRef\": \"FSD Directory.Email Address\"}, {\"queryRef\": \"FSD Directory.website\"}, {\"queryRef\": \"FSD Directory.linkedin\"}, {\"queryRef\": \"FSD Directory.facebook\"}, {\"queryRef\": \"FSD Directory.Minimum Investable Assets\"}, {\"queryRef\": \"FSD Directory.profile_url\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"f\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"firm\"}, \"Name\": \"FSD Directory.firm\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"position\"}, \"Name\": \"FSD Directory.position\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"CRD Number\"}, \"Name\": \"FSD Directory.CRD Number\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"street_address\"}, \"Name\": \"FSD Directory.street_address\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"city\"}, \"Name\": \"FSD Directory.city\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"state\"}, \"Name\": \"FSD Directory.state\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"zip\"}, \"Name\": \"FSD Directory.zip\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"phone\"}, \"Name\": \"FSD Directory.phone\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"Email Address\"}, \"Name\": \"FSD Directory.Email Address\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"website\"}, \"Name\": \"FSD Directory.website\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"linkedin\"}, \"Name\": \"FSD Directory.linkedin\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"facebook\"}, \"Name\": \"FSD Directory.facebook\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"Minimum Investable Assets\"}, \"Name\": \"FSD Directory.Minimum Investable Assets\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"profile_url\"}, \"Name\": \"FSD Directory.profile_url\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'FSD Advisor Prospecting & Outreach Master Directory'\"}}}}}]}}}",
+          "filters": "[]",
+          "query": "{\"Commands\": [{\"SemanticQueryDataShapeCommand\": {\"Query\": {\"Version\": 2, \"From\": [{\"Name\": \"f\", \"Entity\": \"FSD Directory\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"firm\"}, \"Name\": \"FSD Directory.firm\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"position\"}, \"Name\": \"FSD Directory.position\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"CRD Number\"}, \"Name\": \"FSD Directory.CRD Number\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"street_address\"}, \"Name\": \"FSD Directory.street_address\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"city\"}, \"Name\": \"FSD Directory.city\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"state\"}, \"Name\": \"FSD Directory.state\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"zip\"}, \"Name\": \"FSD Directory.zip\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"phone\"}, \"Name\": \"FSD Directory.phone\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"Email Address\"}, \"Name\": \"FSD Directory.Email Address\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"website\"}, \"Name\": \"FSD Directory.website\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"linkedin\"}, \"Name\": \"FSD Directory.linkedin\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"facebook\"}, \"Name\": \"FSD Directory.facebook\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"Minimum Investable Assets\"}, \"Name\": \"FSD Directory.Minimum Investable Assets\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"f\"}}, \"Property\": \"profile_url\"}, \"Name\": \"FSD Directory.profile_url\"}]}, \"Binding\": {\"Primary\": {\"Groupings\": [{\"Projections\": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]}]}}}}]}"
+        }
+      ]
+    }
+  ],
+  "config": "{\"version\": \"5.55\", \"themeCollection\": {\"baseTheme\": {\"name\": \"CY24SU10\", \"version\": \"5.55\", \"type\": 2}}}",
+  "layoutOptimization": 0
+}

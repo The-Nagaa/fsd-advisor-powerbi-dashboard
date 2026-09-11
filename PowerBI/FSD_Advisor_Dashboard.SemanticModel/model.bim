@@ -1,0 +1,316 @@
+{
+  "name": "FSD_Advisor_Dashboard",
+  "compatibilityLevel": 1567,
+  "model": {
+    "culture": "en-US",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "expressions": [
+      {
+        "name": "SourceFilePath",
+        "kind": "m",
+        "expression": [
+          "\"c:\\\\Users\\\\pvnag\\\\Desktop\\\\FSD-Part-2-Dashboard\\\\Submission File (Naga).xlsx\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]"
+        ],
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Text"
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "name": "FSD Directory",
+        "columns": [
+          {
+            "name": "profile_url",
+            "dataType": "string",
+            "sourceColumn": "profile_url"
+          },
+          {
+            "name": "firm",
+            "dataType": "string",
+            "sourceColumn": "firm"
+          },
+          {
+            "name": "position",
+            "dataType": "string",
+            "sourceColumn": "position"
+          },
+          {
+            "name": "street_address",
+            "dataType": "string",
+            "sourceColumn": "street_address"
+          },
+          {
+            "name": "city",
+            "dataType": "string",
+            "sourceColumn": "city",
+            "dataCategory": "City"
+          },
+          {
+            "name": "state",
+            "dataType": "string",
+            "sourceColumn": "state",
+            "dataCategory": "StateOrProvince"
+          },
+          {
+            "name": "country",
+            "dataType": "string",
+            "sourceColumn": "country",
+            "dataCategory": "Country"
+          },
+          {
+            "name": "zip",
+            "dataType": "string",
+            "sourceColumn": "zip",
+            "dataCategory": "PostalCode"
+          },
+          {
+            "name": "phone",
+            "dataType": "string",
+            "sourceColumn": "phone"
+          },
+          {
+            "name": "website",
+            "dataType": "string",
+            "sourceColumn": "website",
+            "dataCategory": "WebURL"
+          },
+          {
+            "name": "facebook",
+            "dataType": "string",
+            "sourceColumn": "facebook",
+            "dataCategory": "WebURL"
+          },
+          {
+            "name": "linkedin",
+            "dataType": "string",
+            "sourceColumn": "linkedin",
+            "dataCategory": "WebURL"
+          },
+          {
+            "name": "pdf_profile_link",
+            "dataType": "string",
+            "sourceColumn": "pdf_profile_link",
+            "dataCategory": "WebURL"
+          },
+          {
+            "name": "scraped_by",
+            "dataType": "string",
+            "sourceColumn": "scraped_by"
+          },
+          {
+            "name": "Website Available",
+            "dataType": "string",
+            "sourceColumn": "Website Available"
+          },
+          {
+            "name": "LinkedIn Available",
+            "dataType": "string",
+            "sourceColumn": "LinkedIn Available"
+          },
+          {
+            "name": "Facebook Available",
+            "dataType": "string",
+            "sourceColumn": "Facebook Available"
+          },
+          {
+            "name": "Clean State",
+            "dataType": "string",
+            "sourceColumn": "Clean State",
+            "dataCategory": "StateOrProvince"
+          },
+          {
+            "name": "Clean City",
+            "dataType": "string",
+            "sourceColumn": "Clean City",
+            "dataCategory": "City"
+          },
+          {
+            "name": "Clean ZIP",
+            "dataType": "string",
+            "sourceColumn": "Clean ZIP",
+            "dataCategory": "PostalCode"
+          },
+          {
+            "name": "Display Address",
+            "dataType": "string",
+            "sourceColumn": "Display Address",
+            "dataCategory": "Address"
+          },
+          {
+            "name": "CRD Number",
+            "dataType": "string",
+            "sourceColumn": "CRD Number"
+          },
+          {
+            "name": "Email Address",
+            "dataType": "string",
+            "sourceColumn": "Email Address"
+          },
+          {
+            "name": "Minimum Investable Assets",
+            "dataType": "string",
+            "sourceColumn": "Minimum Investable Assets"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "FSD Directory",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let\r\n",
+                "    Source = Excel.Workbook(File.Contents(SourceFilePath), null, true),\r\n",
+                "    #\"FSD directory_Sheet\" = Source{[Item=\"FSD directory\",Kind=\"Sheet\"]}[Data],\r\n",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(#\"FSD directory_Sheet\", [PromoteAllScalars=true]),\r\n",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{\r\n",
+                "        {\"profile_url\", type text},\r\n",
+                "        {\"firm\", type text},\r\n",
+                "        {\"position\", type text},\r\n",
+                "        {\"street_address\", type text},\r\n",
+                "        {\"city\", type text},\r\n",
+                "        {\"state\", type text},\r\n",
+                "        {\"country\", type text},\r\n",
+                "        {\"zip\", type text},\r\n",
+                "        {\"phone\", type text},\r\n",
+                "        {\"website\", type text},\r\n",
+                "        {\"facebook\", type text},\r\n",
+                "        {\"linkedin\", type text},\r\n",
+                "        {\"pdf_profile_link\", type text},\r\n",
+                "        {\"scraped_by\", type text}\r\n",
+                "    }),\r\n",
+                "    #\"Added Website Available\" = Table.AddColumn(#\"Changed Type\", \"Website Available\", each if [website] <> null and Text.Trim(Text.From([website])) <> \"\" then \"Yes\" else \"No\", type text),\r\n",
+                "    #\"Added LinkedIn Available\" = Table.AddColumn(#\"Added Website Available\", \"LinkedIn Available\", each if [linkedin] <> null and Text.Trim(Text.From([linkedin])) <> \"\" then \"Yes\" else \"No\", type text),\r\n",
+                "    #\"Added Facebook Available\" = Table.AddColumn(#\"Added LinkedIn Available\", \"Facebook Available\", each if [facebook] <> null and Text.Trim(Text.From([facebook])) <> \"\" then \"Yes\" else \"No\", type text),\r\n",
+                "    #\"Added Clean State\" = Table.AddColumn(#\"Added Facebook Available\", \"Clean State\", each if [state] = null or Text.Trim(Text.From([state])) = \"\" then \"(Blank / Unknown)\" else Text.Trim(Text.From([state])), type text),\r\n",
+                "    #\"Added Clean City\" = Table.AddColumn(#\"Added Clean State\", \"Clean City\", each if [city] = null or Text.Trim(Text.From([city])) = \"\" then \"(Blank / Unknown)\" else Text.Trim(Text.From([city])), type text),\r\n",
+                "    #\"Added Clean ZIP\" = Table.AddColumn(#\"Added Clean City\", \"Clean ZIP\", each if [zip] = null or Text.Trim(Text.From([zip])) = \"\" then \"(Blank)\" else Text.Trim(Text.From([zip])), type text),\r\n",
+                "    #\"Added Display Address\" = Table.AddColumn(#\"Added Clean ZIP\", \"Display Address\", each Text.Combine(List.Select({[street_address], [city], [state], [zip]}, each _ <> null and Text.Trim(Text.From(_)) <> \"\"), \", \"), type text),\r\n",
+                "    #\"Added CRD Number\" = Table.AddColumn(#\"Added Display Address\", \"CRD Number\", each \"Not available in Part-1 dataset\", type text),\r\n",
+                "    #\"Added Email Address\" = Table.AddColumn(#\"Added CRD Number\", \"Email Address\", each \"Not available in Part-1 dataset\", type text),\r\n",
+                "    #\"Added Min Assets\" = Table.AddColumn(#\"Added Email Address\", \"Minimum Investable Assets\", each \"Not available in Part-1 dataset\", type text)\r\n",
+                "in\r\n",
+                "    #\"Added Min Assets\"\r\n"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "_Measures",
+        "columns": [
+          {
+            "name": "Measure_Holder",
+            "dataType": "string",
+            "sourceColumn": "Measure_Holder",
+            "isHidden": true
+          }
+        ],
+        "partitions": [
+          {
+            "name": "_Measures",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let\r\n",
+                "    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i44FAA==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Measure_Holder = _t])\r\n",
+                "in\r\n",
+                "    Source\r\n"
+              ]
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Total Advisor Firms",
+            "expression": "DISTINCTCOUNT('FSD Directory'[firm])",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Filtered Advisor Count",
+            "expression": "COUNTROWS('FSD Directory')",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Total Advisor Profiles",
+            "expression": "COUNTROWS('FSD Directory')",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Unique States",
+            "expression": "CALCULATE(DISTINCTCOUNT('FSD Directory'[state]), 'FSD Directory'[state] <> BLANK(), 'FSD Directory'[state] <> \"\")",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Unique Cities",
+            "expression": "CALCULATE(DISTINCTCOUNT('FSD Directory'[city]), 'FSD Directory'[city] <> BLANK(), 'FSD Directory'[city] <> \"\")",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Unique ZIP Codes",
+            "expression": "CALCULATE(DISTINCTCOUNT('FSD Directory'[zip]), 'FSD Directory'[zip] <> BLANK(), 'FSD Directory'[zip] <> \"\")",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Firms with Website",
+            "expression": "CALCULATE(DISTINCTCOUNT('FSD Directory'[firm]), 'FSD Directory'[Website Available] = \"Yes\")",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Firms with LinkedIn",
+            "expression": "CALCULATE(DISTINCTCOUNT('FSD Directory'[firm]), 'FSD Directory'[LinkedIn Available] = \"Yes\")",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Firms with Facebook",
+            "expression": "CALCULATE(DISTINCTCOUNT('FSD Directory'[firm]), 'FSD Directory'[Facebook Available] = \"Yes\")",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Website Coverage %",
+            "expression": "DIVIDE([Firms with Website], [Total Advisor Firms], 0)",
+            "formatString": "0.0%"
+          },
+          {
+            "name": "LinkedIn Coverage %",
+            "expression": "DIVIDE([Firms with LinkedIn], [Total Advisor Firms], 0)",
+            "formatString": "0.0%"
+          },
+          {
+            "name": "Facebook Coverage %",
+            "expression": "DIVIDE([Firms with Facebook], [Total Advisor Firms], 0)",
+            "formatString": "0.0%"
+          },
+          {
+            "name": "Firms with All Channels",
+            "expression": "CALCULATE(DISTINCTCOUNT('FSD Directory'[firm]), 'FSD Directory'[Website Available] = \"Yes\", 'FSD Directory'[LinkedIn Available] = \"Yes\", 'FSD Directory'[Facebook Available] = \"Yes\")",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Firms with Phone",
+            "expression": "CALCULATE(DISTINCTCOUNT('FSD Directory'[firm]), 'FSD Directory'[phone] <> BLANK(), 'FSD Directory'[phone] <> \"\")",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Phone Coverage %",
+            "expression": "DIVIDE([Firms with Phone], [Total Advisor Firms], 0)",
+            "formatString": "0.0%"
+          }
+        ]
+      }
+    ]
+  }
+}

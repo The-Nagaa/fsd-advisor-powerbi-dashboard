@@ -1,0 +1,9 @@
+{
+  "version": "1.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../FSD_Advisor_Dashboard.SemanticModel"
+    },
+    "byConnection": null
+  }
+}
