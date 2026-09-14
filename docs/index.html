@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSD Advisor Directory — Power BI Dashboard</title>
+    <meta name="description" content="Interactive Advisor Prospecting & Outreach Intelligence Dashboard built in Power BI from 40,430 financial advisor profiles across the United States.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Top Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="brand">
+                <span class="pbi-icon">PBI</span>
+                <span class="brand-text">FSD Advisor Intelligence</span>
+            </a>
+            <nav class="nav-menu">
+                <a href="#overview">Overview</a>
+                <a href="#features">Features</a>
+                <a href="#pages">Dashboard Pages</a>
+                <a href="#kpis">KPIs</a>
+                <a href="#validation">Validation</a>
+                <a href="#tech">Tech Stack</a>
+                <a href="https://github.com/The-Nagaa/fsd-advisor-powerbi-dashboard" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    GitHub Repo
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="badge-tag">Part-2 Internship Assignment Showcase</div>
+            <h1 class="hero-title">FSD Advisor Directory — Power BI Dashboard</h1>
+            <p class="hero-subtitle">Interactive Advisor Prospecting & Outreach Intelligence</p>
+            <p class="hero-desc">
+                An enterprise-grade commercial intelligence dashboard built exclusively on the verified Part-1 financial advisor directory dataset. Empowering sales, marketing, and research teams to analyze geographic concentration, evaluate digital channel readiness, and pinpoint high-value outreach opportunities.
+            </p>
+
+            <!-- Key Hero Metrics Ribbon -->
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <span class="metric-num">40,430</span>
+                    <span class="metric-label">Advisor Profiles</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-num">36,207</span>
+                    <span class="metric-label">Unique Firms</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-num">54</span>
+                    <span class="metric-label">Geographic Entries</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-num">4,093</span>
+                    <span class="metric-label">Covered Cities</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-num">6,905</span>
+                    <span class="metric-label">ZIP Codes</span>
+                </div>
+            </div>
+
+            <div class="hero-actions">
+                <a href="#pages" class="btn btn-primary">Explore Dashboard Pages</a>
+                <a href="#validation" class="btn btn-secondary">View Tests A–K Audit</a>
+                <a href="https://github.com/The-Nagaa/fsd-advisor-powerbi-dashboard" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    GitHub Source Code
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview Section -->
+    <section id="overview" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Business Context</span>
+                <h2>Project Overview & Commercial Purpose</h2>
+                <p class="section-desc">Designed to bridge raw scraped directory records with actionable commercial workflows across five core business functions.</p>
+            </div>
+
+            <div class="pillars-grid">
+                <div class="pillar-card">
+                    <div class="pillar-icon">🎯</div>
+                    <h3>Sales Planning</h3>
+                    <p>Enables sales managers to balance geographic sales territories, assess advisor density per state/metro, and assign quotas backed by empirical firm counts.</p>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-icon">📣</div>
+                    <h3>Marketing Campaigns</h3>
+                    <p>Segments firms by web maturity and social channel adoption to design targeted inbound, outbound, and content syndication programs.</p>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-icon">📊</div>
+                    <h3>Market Research</h3>
+                    <p>Delivers macro market intelligence across 4,093 cities, identifying under-served financial advisor clusters and regional wealth advisory strongholds.</p>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-icon">🔍</div>
+                    <h3>Advisor Prospecting</h3>
+                    <p>Provides business development representatives with high-fidelity filtering to pinpoint verified advisory firms with active phone and web channels.</p>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-icon">✉️</div>
+                    <h3>Outreach Execution</h3>
+                    <p>Prioritizes multi-channel outreach for the 319 elite advisory entities maintaining an integrated digital stack across corporate websites, LinkedIn, and Facebook.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section id="features" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Capabilities</span>
+                <h2>Key Dashboard Features</h2>
+                <p class="section-desc">Engineered for seamless cross-filtering, responsive navigation, and analytical depth.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-tag">Location Dimension</div>
+                    <h4>Comprehensive Geographic Slicers</h4>
+                    <p>Granular cascading controls across <strong>Country</strong> (United States), <strong>State</strong> (54 entries), <strong>City</strong> (4,093 hubs), and <strong>ZIP Code</strong> (6,905 postal codes).</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-tag">Digital Channels</div>
+                    <h4>Digital Presence Triad</h4>
+                    <p>Independent and combined binary slicers for <strong>Website Available</strong> (Yes/No), <strong>LinkedIn Available</strong> (Yes/No), and <strong>Facebook Available</strong> (Yes/No).</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-tag">DAX Engine</div>
+                    <h4>Dynamic KPI Cards</h4>
+                    <p>All metrics dynamically calculate in real-time under active filter contexts using explicit DAX measures with strict firm-level deduplication (<code>DISTINCTCOUNT(firm)</code>).</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-tag">Territory Intelligence</div>
+                    <h4>Geographic Density Analysis</h4>
+                    <p>Identifies geographic powerhouses: California (5,701), New York (3,551), Georgia (3,456), Texas (2,734), and Florida (2,659) accounting for 44.8% of the national advisor base.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-tag">Omnichannel</div>
+                    <h4>Digital Stack Breakdown</h4>
+                    <p>Uncovers channel dynamics: 58.7% firm website adoption, 1.4% LinkedIn presence, 2.3% Facebook presence, and a dedicated 319-firm multi-channel cohort.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-tag">Operational Grid</div>
+                    <h4>Searchable Prospecting Directory</h4>
+                    <p>Full operational grid supporting column sorting, multi-attribute filtering, direct external URL links, and transparent handling of non-collected source fields.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Pages Showcase -->
+    <section id="pages" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Visual Showcase</span>
+                <h2>Multi-Page Power BI Dashboard</h2>
+                <p class="section-desc">Explore the 4 production dashboard pages captured directly from Power BI Desktop.</p>
+            </div>
+
+            <div class="showcase-list">
+
+                <!-- Page 1 -->
+                <div class="showcase-item">
+                    <div class="showcase-image-wrap">
+                        <img src="assets/overview.png" alt="Page 1: Executive Overview Power BI Dashboard" class="showcase-img" onclick="openModal(this)">
+                        <span class="img-badge">Click to enlarge</span>
+                    </div>
+                    <div class="showcase-content">
+                        <div class="page-number">Page 01</div>
+                        <h3>Executive Overview & Outreach Intelligence</h3>
+                        <p class="showcase-desc">
+                            Designed for senior leadership and commercial directors. Delivers instant macro visibility across all 40,430 advisor profiles. Features a top KPI ribbon of 8 dynamic cards, the complete panel of <strong>all 7 required slicers</strong> (Country, State, City, ZIP, Website, LinkedIn, Facebook), a state volume distribution bar chart, and digital adoption progress trackers.
+                        </p>
+                        <ul class="showcase-highlights">
+                            <li><strong>All 7 Filters Included:</strong> Country, State, City, ZIP Code, Website, LinkedIn, Facebook</li>
+                            <li><strong>Top 10 States Ranked:</strong> Highlights CA (5,701) through MI (1,141)</li>
+                            <li><strong>Digital Footprint Summary:</strong> Visualizes web, phone, LinkedIn, and Facebook penetration</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Page 2 -->
+                <div class="showcase-item reverse">
+                    <div class="showcase-image-wrap">
+                        <img src="assets/geographic_analysis.png" alt="Page 2: Geographic Analysis Power BI Dashboard" class="showcase-img" onclick="openModal(this)">
+                        <span class="img-badge">Click to enlarge</span>
+                    </div>
+                    <div class="showcase-content">
+                        <div class="page-number">Page 02</div>
+                        <h3>Geographic Distribution & Market Penetration</h3>
+                        <p class="showcase-desc">
+                            Built for regional territory planning and sales management. Ranks market penetration across 54 states/territories and drills down into the top metropolitan hubs. Demonstrates heavy commercial concentration in New York City (818), Atlanta (782), Chicago (554), and Los Angeles (313).
+                        </p>
+                        <ul class="showcase-highlights">
+                            <li><strong>Territory Hierarchy:</strong> State density breakdown alongside top 10 metropolitan markets</li>
+                            <li><strong>Precision Filtering:</strong> Supports granular filtering by specific ZIP delivery codes</li>
+                            <li><strong>Area Coverage KPIs:</strong> Active counts for advisors, states, cities, and ZIPs in selected territory</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Page 3 -->
+                <div class="showcase-item">
+                    <div class="showcase-image-wrap">
+                        <img src="assets/digital_presence.png" alt="Page 3: Digital Presence Power BI Dashboard" class="showcase-img" onclick="openModal(this)">
+                        <span class="img-badge">Click to enlarge</span>
+                    </div>
+                    <div class="showcase-content">
+                        <div class="page-number">Page 03</div>
+                        <h3>Digital Presence & Multi-Channel Outreach Prioritization</h3>
+                        <p class="showcase-desc">
+                            Tailored for digital marketing and SDR teams. Analyzes the intersection of corporate websites and social media handles. Proves a crucial empirical insight: <strong>100% of firms with LinkedIn or Facebook profiles also maintain a website</strong>, allowing seamless execution of omnichannel prospecting cadences for 319 elite firms.
+                        </p>
+                        <ul class="showcase-highlights">
+                            <li><strong>Cross-Channel Triad:</strong> Compares Website, LinkedIn, and Facebook adoption</li>
+                            <li><strong>Social Presence by State:</strong> Dual-channel breakdown across top financial advisory hubs</li>
+                            <li><strong>High-Priority Prospect List:</strong> Curated multi-channel ready targets with verified digital assets</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Page 4 -->
+                <div class="showcase-item reverse">
+                    <div class="showcase-image-wrap">
+                        <img src="assets/advisor_directory.png" alt="Page 4: Advisor Directory Power BI Dashboard" class="showcase-img" onclick="openModal(this)">
+                        <span class="img-badge">Click to enlarge</span>
+                    </div>
+                    <div class="showcase-content">
+                        <div class="page-number">Page 04</div>
+                        <h3>Advisor Prospecting & Outreach Master Directory</h3>
+                        <p class="showcase-desc">
+                            The primary operational prospecting workbench for sales representatives and researchers. Houses the master interactive data grid containing complete firm names, positions, physical addresses, cities, states, ZIP codes, telephone numbers, and direct hyperlinks. Non-collected Part-1 attributes are transparently displayed without data fabrication.
+                        </p>
+                        <ul class="showcase-highlights">
+                            <li><strong>Comprehensive Columns:</strong> Firm Name, Position, Address, City, State, ZIP, Phone, Web Links</li>
+                            <li><strong>Data Availability Badges:</strong> Visual indicators for Available vs Missing channels</li>
+                            <li><strong>Transparent Labeling:</strong> CRD, Email & Min Assets cleanly tagged as "Not available in Part-1 dataset"</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- KPI Section -->
+    <section id="kpis" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">DAX Measures</span>
+                <h2>Required Executive KPI Metrics</h2>
+                <p class="section-desc">Computed strictly using dynamic DAX measures responding instantaneously to active slicers.</p>
+            </div>
+
+            <div class="kpi-grid">
+                <div class="kpi-box">
+                    <span class="kpi-header">Total Advisor Firms</span>
+                    <span class="kpi-value-big">36,207</span>
+                    <span class="kpi-dax">DISTINCTCOUNT('FSD Directory'[firm])</span>
+                    <p class="kpi-subtext">Distinct corporate legal entities identified across the directory.</p>
+                </div>
+                <div class="kpi-box">
+                    <span class="kpi-header">Filtered Advisor Count</span>
+                    <span class="kpi-value-big">40,430</span>
+                    <span class="kpi-dax">COUNTROWS('FSD Directory')</span>
+                    <p class="kpi-subtext">Total advisor profile records active under current filter selection.</p>
+                </div>
+                <div class="kpi-box">
+                    <span class="kpi-header">Unique States</span>
+                    <span class="kpi-value-big">54</span>
+                    <span class="kpi-dax">CALCULATE(DISTINCTCOUNT(state), state &lt;&gt; BLANK())</span>
+                    <p class="kpi-subtext">50 US States + DC + PR + VI + 1 preserved outlier entry.</p>
+                </div>
+                <div class="kpi-box">
+                    <span class="kpi-header">Unique Cities</span>
+                    <span class="kpi-value-big">4,093</span>
+                    <span class="kpi-dax">CALCULATE(DISTINCTCOUNT(city), city &lt;&gt; BLANK())</span>
+                    <p class="kpi-subtext">Municipalities and metropolitan hubs represented nationwide.</p>
+                </div>
+                <div class="kpi-box">
+                    <span class="kpi-header">Unique ZIP Codes</span>
+                    <span class="kpi-value-big">6,905</span>
+                    <span class="kpi-dax">CALCULATE(DISTINCTCOUNT(zip), zip &lt;&gt; BLANK())</span>
+                    <p class="kpi-subtext">Postal delivery territories covering urban and suburban clusters.</p>
+                </div>
+                <div class="kpi-box">
+                    <span class="kpi-header">Firms with Website</span>
+                    <span class="kpi-value-big">21,260</span>
+                    <span class="kpi-dax">CALCULATE(DISTINCTCOUNT(firm), [Website] = "Yes")</span>
+                    <p class="kpi-subtext">58.7% firm adoption rate (24,627 individual profile records).</p>
+                </div>
+                <div class="kpi-box">
+                    <span class="kpi-header">Firms with LinkedIn</span>
+                    <span class="kpi-value-big">515</span>
+                    <span class="kpi-dax">CALCULATE(DISTINCTCOUNT(firm), [LinkedIn] = "Yes")</span>
+                    <p class="kpi-subtext">1.4% firm adoption rate (556 individual profile records).</p>
+                </div>
+                <div class="kpi-box">
+                    <span class="kpi-header">Firms with Facebook</span>
+                    <span class="kpi-value-big">846</span>
+                    <span class="kpi-dax">CALCULATE(DISTINCTCOUNT(firm), [Facebook] = "Yes")</span>
+                    <p class="kpi-subtext">2.3% firm adoption rate (900 individual profile records).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack Section -->
+    <section id="tech" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Engineering</span>
+                <h2>Technology Stack & Architecture</h2>
+                <p class="section-desc">Modern business intelligence tools built for speed, compression, and enterprise maintainability.</p>
+            </div>
+
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon-pbi">PBI</div>
+                    <h3>Microsoft Power BI</h3>
+                    <p>Power BI Desktop Version 2.151 (February 2026 release) utilizing the in-memory VertiPaq tabular analytical engine for sub-second filter evaluations.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon-code">DAX</div>
+                    <h3>DAX (Data Analysis Expressions)</h3>
+                    <p>Optimized measures leveraging <code>DISTINCTCOUNT</code>, <code>CALCULATE</code>, <code>DIVIDE</code>, and dynamic filter context propagation across all visual containers.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon-pq">PQ</div>
+                    <h3>Power Query (M Language)</h3>
+                    <p>Reproducible automated ETL pipelines enforcing strict text typing, whitespace trimming, null handling, binary presence flags, and parameterization.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon-xls">XLS</div>
+                    <h3>Microsoft Excel Source</h3>
+                    <p><code>Submission File (Naga).xlsx</code> (Worksheet: <code>FSD directory</code>), serving as the sole, read-only authoritative source containing 40,430 advisor rows.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Validation & Ground Truth Audit (Tests A-K) -->
+    <section id="validation" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Auditing & Quality</span>
+                <h2>Ground Truth Validation (Tests A–K)</h2>
+                <p class="section-desc">Rigorous verification comparing Power BI dashboard metrics against direct Python/Excel audit scripts across 11 complex scenarios.</p>
+            </div>
+
+            <div class="table-responsive">
+                <table class="audit-table">
+                    <thead>
+                        <tr>
+                            <th>Test</th>
+                            <th>Filter Scenario</th>
+                            <th>Filtered Advisors</th>
+                            <th>Distinct Firms</th>
+                            <th>States</th>
+                            <th>Cities</th>
+                            <th>ZIPs</th>
+                            <th>Firms w/ Web</th>
+                            <th>Firms w/ LI</th>
+                            <th>Firms w/ FB</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Test A</strong></td>
+                            <td>Baseline (Unfiltered)</td>
+                            <td>40,430</td>
+                            <td>36,207</td>
+                            <td>54</td>
+                            <td>4,093</td>
+                            <td>6,905</td>
+                            <td>21,260</td>
+                            <td>515</td>
+                            <td>846</td>
+                            <td><span class="badge-pass">PASS</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Test B</strong></td>
+                            <td>Country = United States</td>
+                            <td>40,430</td>
+                            <td>36,207</td>
+                            <td>54</td>
+                            <td>4,093</td>
+                            <td>6,905</td>
+                            <td>21,260</td>
+                            <td>515</td>
+                            <td>846</td>
+                            <td><span class="badge-pass">PASS</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Test C</strong></td>
+                            <td>State = CA</td>
+                            <td>5,701</td>
+                            <td>5,145</td>
+                            <td>1</td>
+                            <td>442</td>
+                            <td>802</td>
+                            <td>3,342</td>
+                            <td>60</td>
+                            <td>88</td>
+                            <td><span class="badge-pass">PASS</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Test D</strong></td>
+                            <td>State = CA, City = Los Angeles</td>
+                            <td>313</td>
+                            <td>307</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>45</td>
+                            <td>257</td>
+                            <td>5</td>
+                            <td>7</td>
+                            <td><span class="badge-pass">PASS</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Test E</strong></td>
+                            <td>State = CA, City = Los Angeles, ZIP = 90067</td>
+                            <td>42</td>
+                            <td>41</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>39</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td><span class="badge-pass">PASS</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Test F</strong></td>
+                            <td>Website Available = Yes</td>
+                            <td>24,627</td>
+                            <td>21,260</td>
+                            <td>53</td>
+                            <td>3,347</td>
+                            <td>6,207</td>
+                            <td>21,260</td>
+                            <td>515</td>
+                            <td>846</td>
+                            <td><span class="badge-pass">PASS</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Test G</strong></td>
+                            <td>LinkedIn Available = Yes</td>
+                            <td>556</td>
+                            <td>515</td>
+                            <td>40</td>
+                            <td>316</td>
+                            <td>437</td>
+                            <td>515</td>
+                            <td>515</td>
+                            <td>319</td>
+                            <td><span class="badge-pass">PASS</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Test H</strong></td>
+                            <td>Facebook Available = Yes</td>
+                            <td>900</td>
+                            <td>846</td>
+                            <td>48</td>
+                            <td>570</td>
+                            <td>765</td>
+                            <td>846</td>
+                            <td>319</td>
+                            <td>846</td>
+                            <td><span class="badge-pass">PASS</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Test I</strong></td>
+                            <td>All 3 Channels (Web + LI + FB)</td>
+                            <td>352</td>
+                            <td>319</td>
+                            <td>37</td>
+                            <td>245</td>
+                            <td>308</td>
+                            <td>319</td>
+                            <td>319</td>
+                            <td>319</td>
+                            <td><span class="badge-pass">PASS</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Test J</strong></td>
+                            <td>State = CA &amp; Web = Yes &amp; LI = Yes</td>
+                            <td>65</td>
+                            <td>60</td>
+                            <td>1</td>
+                            <td>33</td>
+                            <td>50</td>
+                            <td>60</td>
+                            <td>60</td>
+                            <td>48</td>
+                            <td><span class="badge-pass">PASS</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Test K</strong></td>
+                            <td>Reset All Slicers (Baseline)</td>
+                            <td>40,430</td>
+                            <td>36,207</td>
+                            <td>54</td>
+                            <td>4,093</td>
+                            <td>6,905</td>
+                            <td>21,260</td>
+                            <td>515</td>
+                            <td>846</td>
+                            <td><span class="badge-pass">PASS</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="audit-note">
+                <strong>Audit Conclusion:</strong> Across all 11 testing regimes, the Power BI analytical engine matches the source Excel ground truth with <strong>zero discrepancies (0 delta)</strong>. Slicer resets return cleanly to the 40,430 baseline without memory artifacts.
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Transparency & Limitations -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Data Governance</span>
+                <h2>Data Boundaries & Ethical Transparency</h2>
+                <p class="section-desc">Strict adherence to sole-source project constraints without artificial fabrication.</p>
+            </div>
+
+            <div class="limitations-card">
+                <div class="limit-icon">⚠️</div>
+                <div class="limit-content">
+                    <h4>Non-Collected Part-1 Attributes</h4>
+                    <p>
+                        The requested business fields <strong>CRD Number</strong>, <strong>Email Address</strong>, and <strong>Minimum Investable Assets</strong> were not collected during the approved Part-1 web scraping phase. In strict compliance with internship directives:
+                    </p>
+                    <ul class="limit-list">
+                        <li>No external data enrichment was conducted from third-party broker databases (FINRA, SEC, BrokerCheck).</li>
+                        <li>No synthetic, placeholder, or estimated values were fabricated into the dataset.</li>
+                        <li>All three attributes are transparently displayed in the Power BI Directory table as: <code>"Not available in Part-1 dataset"</code>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="completeness-grid">
+                <div class="completeness-item">
+                    <span class="comp-label">Physical Street Address</span>
+                    <span class="comp-val">86.1% Complete</span>
+                    <span class="comp-desc">34,813 records with street addresses; 5,617 blanks handled gracefully.</span>
+                </div>
+                <div class="completeness-item">
+                    <span class="comp-label">Direct Phone Numbers</span>
+                    <span class="comp-val">69.1% Complete</span>
+                    <span class="comp-desc">27,944 verified telephone records ready for immediate call cadences.</span>
+                </div>
+                <div class="completeness-item">
+                    <span class="comp-label">Geographic Precision</span>
+                    <span class="comp-val">99.8% Complete</span>
+                    <span class="comp-desc">40,373 records with state codes; 57 unspecified entries mapped to (Blank / Unknown).</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Links & Deliverables -->
+    <section class="section bg-dark text-white">
+        <div class="container">
+            <div class="cta-wrapper">
+                <h2>Explore the Codebase & Deliverables</h2>
+                <p>The entire repository contains the production PBIX file, universal template (PBIT), modern developer project (PBIP), detailed markdown documentation, and full validation test scripts.</p>
+                <div class="cta-buttons">
+                    <a href="https://github.com/The-Nagaa/fsd-advisor-powerbi-dashboard" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        View on GitHub
+                    </a>
+                    <a href="https://github.com/The-Nagaa/fsd-advisor-powerbi-dashboard/tree/main/PowerBI" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg">
+                        PowerBI Folder Assets
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div>
+                <strong>FSD Part-2 Power BI Dashboard Project</strong>
+                <p>Sole Data Source: <code>Submission File (Naga).xlsx</code> | Author: Naga</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/The-Nagaa/fsd-advisor-powerbi-dashboard" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+                <a href="https://github.com/The-Nagaa/fsd-advisor-powerbi-dashboard/blob/main/documentation/Part-2_Dashboard_Documentation.md" target="_blank" rel="noopener noreferrer">Technical Documentation</a>
+                <a href="https://github.com/The-Nagaa/fsd-advisor-powerbi-dashboard/blob/main/validation/dashboard_validation.md" target="_blank" rel="noopener noreferrer">Validation Tests</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Lightbox Modal -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImg" alt="Enlarged Dashboard View">
+        <div id="modalCaption" class="modal-caption"></div>
+    </div>
+
+    <script>
+        function openModal(imgElement) {
+            const modal = document.getElementById("imageModal");
+            const modalImg = document.getElementById("modalImg");
+            const caption = document.getElementById("modalCaption");
+            modal.style.display = "flex";
+            modalImg.src = imgElement.src;
+            caption.innerHTML = imgElement.alt;
+        }
+
+        function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+
+        // Close on escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
